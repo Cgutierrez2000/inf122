@@ -1,2 +1,2 @@
-Carla Gutierrez
-materia: INF122
+NOMBRE: Carla Gutierrez
+MATERIA: INF122
