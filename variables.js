@@ -73,8 +73,8 @@ let sumaMultiplicacionModulo =
         ocupacion: "desarollador"
     };
 console.log(persona.edad);
-persona["apellido"] = "gutierrez"#
-agregar atributo
+persona["apellido"] = "gutierrez";
+//agregar atributo
 console.log(persona);
 persona["ci"] = 1234567;
 console.log(persona);
@@ -86,15 +86,15 @@ persona.edad = 45;
 console.log(persona);
 persona.ocupacion = "chef";
 console.log(persona);
-const colores = ["rojo", "verde", "azul"];#
-cambiar dato
+const colores = ["rojo", "verde", "azul"];
+//cambiar dato
 
-const color = ["verde", "rojo", "azul"
-    console.log(colores);
-    console.log(colores.length);
-    console.log(colores[0])
-];
-console.log(colores.find("rojo"));
+const color = ["verde", "rojo", "azul"];
+console.log(colores);
+console.log(colores.length);
+console.log(colores[0])
+
+
 colores.reverse();
 
 color[0];
@@ -134,3 +134,30 @@ console.log(elemento);
 console.log(colores);
 
 colores.find()
+var encontrado = colores.find(function(elemento) {
+    return elemento === "rojo"
+
+});
+//find.index devuleve la posiscion del elemento
+var elemento = colores.findIndex(function(elemento) {
+    return elemento === 1;
+});
+console.log(encontrado);
+console.log(elemento);
+//find devuelve el elemento y ve si existe
+colores.find(factory(elemento) {
+    return elemento === "verde";
+});
+//funcion 
+function saludar(nombre) {
+    return "Hola," + nombre + "!";
+}
+const mensaje = saludar("Tatiana");
+console.log(mensaje);
+
+function sumar(a, b) {
+    return a + b;
+}
+const m1 = 8;
+const m2 = 1
+console.log(m1 + "+" + m2 + "=" + sumar(m1, m2));
