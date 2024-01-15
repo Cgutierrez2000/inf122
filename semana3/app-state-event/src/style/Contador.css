@@ -1,0 +1,18 @@
+:root{
+    --orange:#FF872C;
+    --white:#DCDCE5;
+    --sm: 24px;
+
+}
+.contador {
+    min-width: 300px;
+    height: auto;
+    font-size: 160px;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    background-color: #DCDCE5;
+    color: #FF872C;
+    align-items: center;
+    margin-bottom: 10px;
+}
