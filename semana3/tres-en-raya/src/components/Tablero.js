@@ -3,7 +3,7 @@ import Cuadro from "./Cuadro";
 import '../style/Tablero.css';
 import { useState } from "react";
 
-function Tablero({cuadros, onClick}) {
+function Tablero() {
     const [cuadros, setCuadros] = useState(Array(9).fill(null));
     const [jugador, setJugador] = useState("O");
 
