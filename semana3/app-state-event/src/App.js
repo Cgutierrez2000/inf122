@@ -5,6 +5,7 @@ import { useState } from 'react';
 
 function App() {
   const [nroClicks, setNumClicks] = useState(0);
+  const [show, setShow] = useState(true);
   const clickSumar3 = () => {
     setNumClicks(nroClicks - 3);
     
@@ -42,6 +43,8 @@ function App() {
         </div>
         <Boton texto="Reiniciar" esBotonClick={false}
             funcionClick={reiniciar} />
+        <Boton texto="Mostrar/Ocultar" esBotonClick={false} funcionClick={mostrar} />
+
         
       </div>
     </div>
