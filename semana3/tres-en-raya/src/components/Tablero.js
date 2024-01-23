@@ -2,10 +2,7 @@ import React from "react";
 import Cuadro from "./Cuadro";
 import '../style/Tablero.css';
 
-
-
 function Tablero({cuadros, onClick}) {
-    
     const renderizarCuadro = (i) => {
         return (
             <Cuadro
@@ -17,8 +14,7 @@ function Tablero({cuadros, onClick}) {
 
     return (
         <div className='juego'>
-            
-          <div className="tablero">   
+            <div className="tablero">   
                 {renderizarCuadro(0)}
                 {renderizarCuadro(1)}
                 {renderizarCuadro(2)}

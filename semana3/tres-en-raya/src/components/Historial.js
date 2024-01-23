@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 function Historial({ historial, saltarA }) {
     const movimientos = historial.map((paso, movimiento) => {
         const descripcion = movimiento ?
@@ -17,9 +16,6 @@ function Historial({ historial, saltarA }) {
             <ol>{movimientos}</ol>
         </div>
     );
-
-
-
-
 }
+
 export default Historial;
