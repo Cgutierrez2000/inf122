@@ -2,18 +2,22 @@ import React from "react";
 import Tablero from './Tablero';
 import { useState } from "react";
 import Historial from "./Historial";
-
+import '../style/Juego.css';
 function Juego() {
     const [historial, setHistorial]= useState([
         {
             cuadros: Array(9).fill(null)
-        }
+        },
     ]);
     const [nroMovimiento, setNroMovimiento] = useState(0);
     const [cuadros, setCuadros] = useState(Array(9).fill(null));
     const [jugador, setJugador] = useState("X");
     const [ganador, setGanador] = useState(null);
     const click = (i) => {
+        if(ganador !== null)
+        {
+            return ;
+        }
         const nuevoMovimiento = historial.slice(0, nroMovimiento + 1);
         const movimientoActual = nuevoMovimiento[nuevoMovimiento.length - 1];
         const cuadros = movimientoActual.cuadros.slice();
